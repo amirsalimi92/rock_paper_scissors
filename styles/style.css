@@ -1,0 +1,48 @@
+div {
+  border: 1px black solid;
+}
+
+#base {
+  max-width: 844px;
+  overflow: hidden;
+}
+
+#top {
+  display: flex;
+}
+
+#user {
+  flex: 1;
+}
+
+#opponent {
+  flex: 4;
+}
+
+#cpu {
+  flex: 1;
+}
+
+#bottom {
+  display: flex;
+}
+
+#stone {
+  flex: 1;
+}
+
+#middle {
+  flex: 1;
+}
+
+#scissors {
+  flex: 1;
+}
+
+#result {
+  height: 30%;
+}
+
+#paper {
+  height: 70%;
+}
