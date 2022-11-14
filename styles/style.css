@@ -1,33 +1,68 @@
-div {
-  border: 1px black solid;
+@font-face {
+  font-family: gummy;
+  src: url("fonts/gummy.ttf");
+}
+
+body {
+  background-color: #d6dce2;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 #base {
-  max-width: 844px;
+  max-width: 410px;
+  height: 100vh;
   overflow: hidden;
+  border: 1px black solid;
+  border-bottom: 0;
+  background-color: whitesmoke;
+}
+
+#header {
+  margin-bottom: 5%;
+}
+
+#main {
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 #top {
   display: flex;
 }
 
-#user {
+#userFrame {
   flex: 1;
+  text-align: center;
+  font-size: 2em;
+  color: lime;
+  font-family: gummy;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 #opponent {
-  flex: 4;
+  flex: 2;
 }
 
-#cpu {
+#cpuFrame {
   flex: 1;
+  text-align: center;
+  font-size: 2em;
+  color: lime;
+  font-family: gummy;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 #bottom {
   display: flex;
 }
 
-#stone {
+#rock {
   flex: 1;
 }
 
@@ -35,14 +70,81 @@ div {
   flex: 1;
 }
 
+#result {
+  height: auto;
+  max-height: 30%;
+  text-align: center;
+  margin: 5%;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  font-size: 2em;
+  font-family: gummy;
+}
+
+.result2 {
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+#paper {
+  height: auto;
+}
+
 #scissors {
   flex: 1;
 }
 
-#result {
-  height: 30%;
+#rock > img,
+#scissors > div > img {
+  border-radius: 50%;
+  height: auto;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
-#paper {
-  height: 70%;
+#rock > img:hover,
+#scissors > div > img:hover {
+  scale: 1.1;
+}
+
+#opponent > img {
+  border-radius: 50%;
+  height: auto;
+}
+
+#paper > div > img {
+  border-radius: 50%;
+  height: auto;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#paper > div > img:hover {
+  scale: 1.1;
+}
+
+#space {
+  height: 25vh;
+}
+
+#footer {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.container-sm {
+  --bs-gutter-x: 0;
+}
+
+.disabled {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
 }

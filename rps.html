@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo -->
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -19,31 +21,35 @@
         </div>
         <div id="main">
             <div id="top">
-                <div id="user">user</div>
-                <div id="opponent">opponent</div>
-                <div id="cpu">cpu</div>
+                <div id="userFrame">user <br><span id="user"></span></div>
+                <div id="opponent">
+                    <img src="media/letsGo.png" alt="" id="oppo">
+                </div>
+                <div id="cpuFrame">cpu <br><span id="cpu"></span></div>
             </div>
             <div id="bottom">
-                <div id="stone">stone</div>
+                <div id="rock">
+                    <img src="media/rock.png" alt="" class="align-middle">
+                </div>
                 <div id="middle">
                     <div id="result">result</div>
-                    <div id="paper">paper</div>
+                    <div id="paper">
+                        <div>
+                            <img src="media/paper.png" alt="">
+                            <div> </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="scissors">scissors</div>
+                <div id="scissors">
+                    <div>
+                        <img src="media/scissors.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="space">space</div>
-        <div id="footer">footer</div>
+        <div id="space"></div>
+        <div id="footer">Code on <a href="www.github.com">Github</a></div>
     </div>
-
-
-
-    <!-- <div>
-        <button id="stone">Stone</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div> -->
-
     <script src="scripts/main.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
