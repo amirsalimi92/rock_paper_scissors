@@ -12,6 +12,13 @@ img {
   height: 100%;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkblue;
+}
+
 #base {
   max-width: 410px;
   height: 100vh;
@@ -79,11 +86,6 @@ img {
   font-family: gummy;
 }
 
-.result2 {
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
-
 #paper {
   height: auto;
 }
@@ -120,11 +122,9 @@ img {
   margin-bottom: 5%;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-  font-weight: bold;
-  color: darkblue;
+.result2 {
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .container-sm {
