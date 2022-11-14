@@ -2,6 +2,7 @@
 let player = 9;
 
 //give doms
+let base = document.querySelector("#base");
 let rock = document.querySelector("#rock");
 let paper = document.querySelector("#paper");
 let scissors = document.querySelector("#scissors");
@@ -42,6 +43,7 @@ let selectors = [rock, paper, scissors];
 //select one of options with click
 for (let input = 0; input < selectors.length; input++) {
   selectors[input].addEventListener("click", () => {
+    disable();
     opShow();
     calculate(input, cpu);
     ending();
@@ -100,4 +102,10 @@ function draw() {
   result.classList.add("result2");
   result.style.color = "orange";
   result.innerHTML = "DRAW";
+}
+
+function disable() {
+  rock.classList.add("disabled");
+  paper.classList.add("disabled");
+  scissors.classList.add("disabled");
 }

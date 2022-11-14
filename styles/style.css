@@ -62,11 +62,9 @@ img {
   display: flex;
 }
 
-#rock {
-  flex: 1;
-}
-
-#middle {
+#rock,
+#middle,
+#scissors {
   flex: 1;
 }
 
@@ -90,12 +88,9 @@ img {
   height: auto;
 }
 
-#scissors {
-  flex: 1;
-}
-
 #rock > img,
-#scissors > div > img {
+#scissors > div > img,
+#paper > div > img {
   border-radius: 50%;
   height: auto;
   vertical-align: middle;
@@ -110,13 +105,6 @@ img {
 #opponent > img {
   border-radius: 50%;
   height: auto;
-}
-
-#paper > div > img {
-  border-radius: 50%;
-  height: auto;
-  vertical-align: middle;
-  cursor: pointer;
 }
 
 #paper > div > img:hover {
@@ -144,7 +132,5 @@ a:visited {
 }
 
 .disabled {
-  background-color: dimgrey;
-  color: linen;
-  opacity: 1;
+  pointer-events: none;
 }
